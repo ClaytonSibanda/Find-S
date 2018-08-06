@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Nyasha/CLionProjects/Find-S/find_s.cpp">
+			<Option target="Find_S"/>
+		</Unit>
+		<Unit filename="C:/Users/Nyasha/CLionProjects/Find-S/find_s.h">
+			<Option target="Find_S"/>
+		</Unit>
 		<Unit filename="C:/Users/Nyasha/CLionProjects/Find-S/main.cpp">
 			<Option target="Find_S"/>
 		</Unit>

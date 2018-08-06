@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Find_S.dir/main.cpp.obj"
+  "CMakeFiles/Find_S.dir/find_s.cpp.obj"
   "Find_S.pdb"
   "Find_S.exe"
   "Find_S.exe.manifest"

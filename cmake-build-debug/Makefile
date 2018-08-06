@@ -122,6 +122,33 @@ Find_S/fast:
 	$(MAKE) -f CMakeFiles\Find_S.dir\build.make CMakeFiles/Find_S.dir/build
 .PHONY : Find_S/fast
 
+find_s.obj: find_s.cpp.obj
+
+.PHONY : find_s.obj
+
+# target to build an object file
+find_s.cpp.obj:
+	$(MAKE) -f CMakeFiles\Find_S.dir\build.make CMakeFiles/Find_S.dir/find_s.cpp.obj
+.PHONY : find_s.cpp.obj
+
+find_s.i: find_s.cpp.i
+
+.PHONY : find_s.i
+
+# target to preprocess a source file
+find_s.cpp.i:
+	$(MAKE) -f CMakeFiles\Find_S.dir\build.make CMakeFiles/Find_S.dir/find_s.cpp.i
+.PHONY : find_s.cpp.i
+
+find_s.s: find_s.cpp.s
+
+.PHONY : find_s.s
+
+# target to generate assembly for a file
+find_s.cpp.s:
+	$(MAKE) -f CMakeFiles\Find_S.dir\build.make CMakeFiles/Find_S.dir/find_s.cpp.s
+.PHONY : find_s.cpp.s
+
 main.obj: main.cpp.obj
 
 .PHONY : main.obj
@@ -158,6 +185,9 @@ help:
 	@echo ... Find_S
 	@echo ... edit_cache
 	@echo ... rebuild_cache
+	@echo ... find_s.obj
+	@echo ... find_s.i
+	@echo ... find_s.s
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
