@@ -39,9 +39,9 @@ void printHypothesis(){
     }
     std::cout<<" >"<<std::endl;
 }
-void readFile(std::vector<Data> &data){
+void readFile(std::vector<Data> &data,std::string filename){
 std::ifstream myfile;
-std::string filename="C:\\Users\\Nyasha\\CLionProjects\\Find-S\\test.txt";
+//std::string filename="C:\\Users\\Nyasha\\CLionProjects\\Find-S\\test.txt";
 myfile.open(filename);
 std::string line;
 
