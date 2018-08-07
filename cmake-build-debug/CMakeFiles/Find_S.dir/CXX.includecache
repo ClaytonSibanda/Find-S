@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Nyasha/CLionProjects/Find-S/find_s.cpp
+iostream
+-
+find_s.h
+C:/Users/Nyasha/CLionProjects/Find-S/find_s.h
+
+C:/Users/Nyasha/CLionProjects/Find-S/find_s.h
+string
+-
+utility
+-
+vector
+-
+

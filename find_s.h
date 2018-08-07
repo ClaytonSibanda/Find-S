@@ -2,32 +2,43 @@
 // Created by Clayton on 2018/08/04.
 //
 
+/*
+ * Assumes a "" to be an i dont care case
+ * "?" is anything case
+ * */
+
+
 #ifndef FIND_S_FIND_S_H
 #define FIND_S_FIND_S_H
 
 #include <string>
+#include <utility>
 #include <vector>
 //define vectors for testing
-std::vector<std::vector<std::string> > data;
 class Data{
 
 
-  std::string sky;
-  std::string airTemp;
-  std::string humidity;
-  std::string wind;
-  std::string water;
-  std::string forecast;
+
   bool enjoySport;
 
 public:
-Data(std::string _sky,std::string _airTemp,std::string _humidity, std::string _wind,std::string _water,std::string _forecast,bool _enjoySport)
-:sky(_sky),airTemp(_airTemp),humidity(_humidity),wind(_wind),water(_water),forecast(_forecast),enjoySport(_enjoySport){}
+    std::vector<std::string> attributes;
+Data(std::vector<std::string> _attributes):attributes(std::move(_attributes)){}
 
 
 
 
+
+    bool isEnjoySport() const {
+        return enjoySport;
+    }
+
+
+    void setEnjoySport(bool enjoySport) {
+        Data::enjoySport = enjoySport;
+    }
 };
 
-
+void change_h(Data &d);
+void printHypothesis();
 #endif //FIND_S_FIND_S_H
