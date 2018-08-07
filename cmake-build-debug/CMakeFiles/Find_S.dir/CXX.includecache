@@ -6,12 +6,6 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/Nyasha/CLionProjects/Find-S/find_s.cpp
-iostream
--
-find_s.h
-C:/Users/Nyasha/CLionProjects/Find-S/find_s.h
-
 C:/Users/Nyasha/CLionProjects/Find-S/find_s.h
 string
 -
@@ -19,4 +13,10 @@ utility
 -
 vector
 -
+
+C:/Users/Nyasha/CLionProjects/Find-S/main.cpp
+iostream
+-
+find_s.h
+C:/Users/Nyasha/CLionProjects/Find-S/find_s.h
 

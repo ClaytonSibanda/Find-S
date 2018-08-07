@@ -41,4 +41,6 @@ Data(std::vector<std::string> _attributes):attributes(std::move(_attributes)){}
 
 void change_h(const Data &d);
 void printHypothesis();
+void readFile(std::vector<Data> &d);
+
 #endif //FIND_S_FIND_S_H
