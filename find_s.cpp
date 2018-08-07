@@ -6,7 +6,7 @@
 std::vector<std::string> h_data{"","","","","",""};
 Data h(h_data);//global hypothesis, has most specific
 std::vector<Data> dataObjects;//vector of data objects
-void change_h(Data &d){
+void change_h(const Data &d) {
 
     if(d.isEnjoySport()) {//check if d is a positive example first
         //if is most specific
