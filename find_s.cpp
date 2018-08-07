@@ -13,7 +13,7 @@ void change_h(const Data &d) {
 
     if(d.isEnjoySport()) {//check if d is a positive example first
         //if is most specific
-        for(int i=0;i<h.attributes.size();++i){
+        for(unsigned int i=0;i<h.attributes.size();++i){
             if(h.attributes[i]=="")
                 h.attributes[i]=d.attributes[i];
             else{
@@ -31,7 +31,7 @@ void change_h(const Data &d) {
 
 void printHypothesis(){
     std::cout<<"< ";
-    for(int i=0;i<h.attributes.size();++i){
+    for(unsigned int i=0;i<h.attributes.size();++i){
         if(i==h.attributes.size()-1)
         std::cout<<h.attributes[i]<<" ";
         else
@@ -48,13 +48,13 @@ std::string line;
 if(myfile.is_open()){
     bool isSkipped= false;
     while(std::getline(myfile,line))
-    {
+    { std::cout<<line<<std::endl;
         std::stringstream ss(line);
         std::string word;
         if(isSkipped) {
             std::vector<std::string> v;
             while (std::getline(ss, word, ' ')) {
-                //std::cout << word;
+
                 if(word!="Yes" || word!="No")
                     v.push_back(word);
 

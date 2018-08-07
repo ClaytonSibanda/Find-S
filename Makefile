@@ -1,10 +1,19 @@
-#make file for K-means clustering
-FLAGS=  -g -std=c++11
+#make file forFinds
+FLAGS=  -g -Wall -std=c++11
+
 CC=g++
 
-
-find_s:find_s.h find_s.cpp main.cpp
+find_s:find_s.o main.o
 	$(CC) $(FLAGS) -o $@ $^
+
+main.o:main.cpp find_s.cpp find_s.h
+	$(CC) $(FLAGS) -c $^
+
+find_s.o:find_s.cpp find_s.h
+	$(CC) $(FLAGS) -c $^
+
+#find_s:find_s.h find_s.cpp main.cpp
+#	$(CC) $(FLAGS) -o $@ $^
 
 #main.o:main.cpp  audio.h
 #	$(CC) $(FLAGS) -$@ $^
@@ -29,5 +38,5 @@ build:
 
 
 clean:
-	rm -f *.o finds
+	rm -f *.o find_s
 
